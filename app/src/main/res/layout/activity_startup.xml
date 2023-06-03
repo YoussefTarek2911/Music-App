@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/omar_tata"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tata_omarico"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="Get Started"
+        android:textSize="20dp"
+        android:backgroundTint="@color/orange"
+        android:visibility="visible"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

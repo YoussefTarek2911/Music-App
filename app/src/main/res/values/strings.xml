@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MusicAppV2</string>
+    <string name="title_activity_navigation">Navigation_Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_shazam">Shazam</string>
+</resources>

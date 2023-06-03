@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SongPlayer">
+
+    <ImageView
+        android:id="@+id/musicLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_media"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/songInfo"
+        android:textColor="@color/white"
+        android:text="test"
+        android:textSize="21dp"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:freezesText="true"
+        />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+    <SeekBar
+        android:id="@+id/seekBarId"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:thumbTint="@color/white"
+        android:layout_height="wrap_content"
+        android:secondaryProgressTint="#FE5C00"
+        android:progressTint="#FFFFFF"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/currentDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00:00"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/totalDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="00:00"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/previousButton"
+            android:layout_width="48dp"
+            android:layout_height="96dp"
+            android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            app:srcCompat="@drawable/baseline_skip_previous_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/pauseButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/play_stop_background"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/baseline_pause_24"
+            android:clickable="true"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+    
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="48dp"
+            android:layout_height="96dp"
+            android:background="@android:color/transparent"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/baseline_skip_next_24"
+            android:clickable="true"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

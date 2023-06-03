@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackA"
+    >
+
+    <!-- Loading logo or animation -->
+    <ImageView
+        android:id="@+id/loadingLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loading_logo"
+        android:layout_centerInParent="true" />
+
+    <!-- Optional loading text -->
+    <TextView
+        android:id="@+id/loadingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:textSize="16sp"
+        android:textColor="@color/orangeA"
+        android:layout_below="@id/loadingLogo"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

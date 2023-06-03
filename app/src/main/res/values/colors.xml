@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="omar_tata">#0C1015</color>
+    <color name="colorNav">#0C1015</color>
+    <color name="orange">#FF5C00</color>
+    <color name="orangeA">#FF5C00</color>
+    <color name="blackA">#0C1015</color>
+    <color name="selector">#FF5C00</color>
+</resources>
